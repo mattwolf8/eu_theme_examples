@@ -1,0 +1,265 @@
+
+minimal.article_img_m.iphone_five:
+  label: iPhone 5 - article_img-m
+  mediaQuery: '(min-width: 320px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_m.galaxy_five:
+  label: Galaxy 5 - article_img-m
+  mediaQuery: '(min-width: 360px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_m.iphone_six:
+  label: iPhone 6 - article_img-m
+  mediaQuery: '(min-width: 375px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_m.pixel_2:
+  label: Pixel 2 - article_img-m
+  mediaQuery: '(min-width: 411px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_m.iphone_plus:
+  label: iPhone Plus - article_img-m
+  mediaQuery: '(min-width: 414px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_m.mobile:
+  label: Mobile - article_img-m
+  mediaQuery: '(min-width: 480px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-m
+
+minimal.article_img_l.iphone_five:
+  label: iPhone 5 - article_img-l
+  mediaQuery: '(min-width: 320px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-l
+
+minimal.article_img_l.galaxy_five:
+  label: Galaxy 5 - article_img-l
+  mediaQuery: '(min-width: 360px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-l
+
+minimal.article_img_l.iphone_six:
+  label: iPhone 6 - article_img-l
+  mediaQuery: '(min-width: 375px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-l
+
+minimal.article_img_l.pixel_2:
+  label: Pixel 2 - article_img-l
+  mediaQuery: '(min-width: 411px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-l
+
+minimal.article_img_l.mobile:
+  label: Mobile - article_img-l
+  mediaQuery: '(min-width: 480px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article_img-l
+
+
+
+minimal.logo_lg.mobile:
+  label: Mobile - Logo LG
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo LG Image
+
+minimal.logo_lg.tablet:
+  label: Tablet - Logo LG
+  mediaQuery: '(min-width: 760px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo LG Image
+
+minimal.logo_lg.desktop:
+  label: Desktop - Logo LG
+  mediaQuery: '(min-width: 960px)'
+  weight: 2
+  multipliers:
+   - 1x
+   - 2x
+  group: Logo LG Image
+
+
+
+minimal.logo_md.mobile:
+  label: Mobile - Logo MD
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo MD Image
+
+minimal.logo_md.tablet:
+  label: Tablet - Logo MD
+  mediaQuery: '(min-width: 760px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo MD Image
+
+minimal.logo_md.desktop:
+  label: Desktop - Logo MD
+  mediaQuery: '(min-width: 960px)'
+  weight: 2
+  multipliers:
+   - 1x
+   - 2x
+  group: Logo MD Image
+
+
+
+minimal.logo_sm.mobile:
+  label: Mobile - Logo SM
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo SM Image
+
+minimal.logo_sm.tablet:
+  label: Tablet - Logo SM
+  mediaQuery: '(min-width: 760px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: Logo SM Image
+
+minimal.logo_sm.desktop:
+  label: Desktop - Logo SM
+  mediaQuery: '(min-width: 960px)'
+  weight: 2
+  multipliers:
+   - 1x
+   - 2x
+  group: Logo SM Image
+
+
+
+minimal.article_m.iphone_five:
+  label: iPhone 5 - article-m
+  mediaQuery: '(min-device-width: 320px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article-m
+
+minimal.article_m.iphone_six:
+  label: iPhone 6 - article-m
+  mediaQuery: '(min-device-width: 375px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article-m
+
+minimal.article_m.mobile:
+  label: Mobile - article-m
+  mediaQuery: '(min-width: 480px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article-m
+
+minimal.article_m.tablet:
+  label: Tablet - article-m
+  mediaQuery: '(min-width: 760px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article-m
+
+minimal.article_m.desktop:
+  label: Desktop - article-m
+  mediaQuery: '(min-width: 960px)'
+  weight: 2
+  multipliers:
+   - 1x
+   - 2x
+  group: article-m
+
+
+minimal.article_xl.mobile:
+  label: Mobile - article-xl
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+  group: article-xl

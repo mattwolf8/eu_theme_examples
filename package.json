@@ -1,0 +1,25 @@
+{
+  "name": "minimal-gulp",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for custom theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "minimal theme",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-sass": "^*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglifyjs": "*"
+  },
+  "dependencies": {
+    "browserslist": "*",
+    "caniuse-lite": "*"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}

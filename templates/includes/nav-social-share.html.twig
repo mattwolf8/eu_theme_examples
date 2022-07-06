@@ -1,0 +1,9 @@
+{# Social Share Nav #}
+<nav class="nav--share">
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.TheEU.org{{ url }}" target="_blank" class="icon__share icon__share--facebook"></a>
+  <!-- Mail -->
+  <a href="mailto:?subject=News at TheEU.org from {{ publisher|striptags }}&body={{ description|striptags }}%0D%0A%0D%0Ahttps://TheEU.org{{ url }}" class="icon__share icon__share--mail"></a>
+  <!-- Twitter -->
+  <a href="http://twitter.com/share?url=https://www.TheEU.org{{ url }}&text=News at TheEU.org from {{ publisher|striptags }}. Read more at:" target="_blank" class="icon__share icon__share--twitter"></a>
+</nav>

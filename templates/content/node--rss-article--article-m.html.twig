@@ -1,0 +1,73 @@
+{#                #}
+{# TWIG VARIABLES #}
+{#                #}
+
+{# article's field_country_code  |  text variable #}
+{% set cc %}{% spaceless %}{{ content.field_country_code }}{% endspaceless %}{% endset %}
+
+{# article's summary  |  text variable #}
+{% set description %}{% spaceless %}{{ content.field_article_body }}{% endspaceless %}{% endset %}
+
+{# article's Publishing Date  |  text variable #}
+{% set pubdate %}{% spaceless %}{{ content.field_date }}{% endspaceless %}{% endset %}
+
+{# article's title  |  text variable #}
+{% set title %}{% spaceless %}{{ content.field_title }}{% endspaceless %}{% endset %}
+
+{# article's img  |  text variable #}
+{% set img %}{% spaceless %}{{ content.field_image }}{% endspaceless %}{% endset %}
+
+{# Publisher Taxonomy term variable #}
+{% set publisher %}{% spaceless %}{{ content.field_publisher }}{% endspaceless %}{% endset %}
+
+{# Publisher Taxonomy term variable #}
+{% set pubRawValue %}{% spaceless %}{{ content.field_publisher.entity.name.value }}{% endspaceless %}{% endset %}
+
+{# Article Author term variable #}
+{% set author %}{% spaceless %}{{ content.field_author }}{% endspaceless %}{% endset %}
+
+{# Nation Taxonomy term variable #}
+{% set nation %}{% spaceless %}{{ content.field_nation }}{% endspaceless %}{% endset %}
+
+{# Nation Taxonomy term variable #}
+{% set nationRaw %}{% spaceless %}{{ content.field_nation[0]['#title'] }}{% endspaceless %}{% endset %}
+
+
+<article class="article article--m" itemprop="mainEntity" itemscope itemtype="http://schema.org/NewsArticle">
+  <header class="article__header article__header--m">
+    {# Logo #}
+    <aside class="container--publisher" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      {% include directory  ~ '/includes/logo-sm.html.twig' %}
+
+      {# Publisher Taxonomy term stripped of its internal link #}
+      <span itemprop="name" class="publisher--m">{{ publisher }}</span>
+    </aside>
+
+    {# Published Date #}
+    <time itemprop="datePublished dateModified" class="date--m">{{ pubdate }}</time>
+  </header>
+
+  {# Internal Link to the Article's Node #}
+  <h1 itemprop="mainEntityOfPage headline" class="article__title article__title--m {{ cc }}" lang="{{ cc }}">{{ (title|striptags) }}</h1>
+
+  <section class="container--body">
+    {{ img }}
+
+    <div itemprop="articleBody" class="article__body article__body--m {{ cc }}" lang="{{ cc }}">
+      <span class="term nation">{{ nation }} - </span>
+
+      {% if author %}
+        {{ author }}
+      {% else %}
+        <span class="term writer">Staff Writer</span>
+      {% endif %}
+
+      <a itemprop="url" href="{{ url }}" rel="bookmark" class="article__link article__link--m">
+
+        <p>{{(description|striptags) |truncate(176)}} ...</p>
+
+      </a>
+    </div>
+
+  </section>
+</article>

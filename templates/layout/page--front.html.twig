@@ -1,0 +1,20 @@
+{# Header #}
+{% include directory  ~ '/includes/site-header.html.twig' %}
+
+<main role="main" class="layout--main">
+  {# Page 1 #}
+  <a id="main-content" tabindex="-1" class="tabindex"></a>
+
+  {% if page.one_right %}
+    <aside class="page__item--aside" role="complementary">
+      {{ page.one_right}}
+    </aside>
+  {% endif %}
+
+  {% if page.content %}
+    <section class="page__item--section">
+      {{ page.content }}
+    </section>
+    {# /.layout-content #}
+  {% endif %}
+</main>

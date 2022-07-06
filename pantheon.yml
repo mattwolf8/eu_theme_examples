@@ -1,0 +1,14 @@
+# Put overrides to your pantheon.upstream.yml file here.
+# For more information, see: https://pantheon.io/docs/pantheon-yml/
+api_version: 1
+
+# accounting for the web folder
+web_docroot: true
+
+# HTTPS Always
+enforce_https: full+subdomains
+
+database:
+  version: 10.4
+
+php_version: 8.0
